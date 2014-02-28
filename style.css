@@ -19,6 +19,12 @@ nav ul, nav li {
     margin: 0px 0px 30px;
     position: relative;
 }
+#top #site-title {
+    font: 48px/1 BebasNeueRegular,arial,sans-serif;
+    color: rgb(51, 51, 51);
+    margin: 0px;
+    background-color:green;
+}
 #top nav.cart {
 	background: none repeat scroll 0% 0% rgb(238, 238, 238);
 	padding: 0px 10px 0px 12px;
@@ -51,7 +57,6 @@ nav ul, nav li {
     margin: 0px 0px 0px -10px;
 }
 #top nav.header-menu ul {
-	background-color:blue;
 	display: inline-block;
 	padding: 8px 0px 0px;
     margin: 0px 0px 0px 0px;
