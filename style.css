@@ -1,5 +1,5 @@
 body {
-
+	border-top: 4px solid rgb(238, 238, 238);
 }
 .content-wrapper {
 	width: 980px;
@@ -7,10 +7,39 @@ body {
 	padding: 0px 20px;
 	min-height: 100%;
 	background-color: red;
+	text-align: left;
 }
 #top {
     padding: 50px 0px 0px;
     margin: 0px 0px 30px;
     position: relative;
     z-index: 100;
+}
+#top nav.cart {
+	background: none repeat scroll 0% 0% rgb(238, 238, 238);
+	padding: 0px 10px 0px 12px;
+	font-size: 12px;
+	font-weight: bold;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-radius: 0px 0px 6px 6px;
+	color: rgb(102, 102, 102);
+}
+#top nav.cart ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none outside none;
+}
+#top nav.cart li {
+    float: left;
+    padding: 6px 12px 10px 0px;
+    margin: 0px 12px 0px 0px;
+    border-right: 1px solid rgb(204, 204, 204);
+    font-weight: normal;
+}
+#top nav.cart li.last {
+	border:none;
+	padding-right: 0px;
+	margin-right:0px;
 }
