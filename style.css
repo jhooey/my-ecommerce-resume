@@ -119,3 +119,14 @@ aside.sidebar {
 	float:right;
 	width: 240px;
 }
+#bottom {
+	padding: 15px 0px;
+	margin: 25px 0px 50px;
+	font-size: 11px;
+	clear: both;
+	overflow: hidden;
+	height: 1%;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	background-color:orange;
+	color: rgb(153, 153, 153);
+}
