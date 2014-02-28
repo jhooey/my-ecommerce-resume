@@ -1,19 +1,23 @@
 body {
 	border-top: 4px solid rgb(238, 238, 238);
+	font: 13px/1.231 Helvetica,Arial,sans-serif;
 }
 .content-wrapper {
 	width: 980px;
 	margin: 0px auto;
 	padding: 0px 20px;
 	min-height: 100%;
-	background-color: red;
 	text-align: left;
 }
+nav ul, nav li {
+    margin: 0px;
+    list-style: none outside none;
+}
 #top {
+	background-color: red;
     padding: 50px 0px 0px;
     margin: 0px 0px 30px;
     position: relative;
-    z-index: 100;
 }
 #top nav.cart {
 	background: none repeat scroll 0% 0% rgb(238, 238, 238);
@@ -27,9 +31,7 @@ body {
 	color: rgb(102, 102, 102);
 }
 #top nav.cart ul {
-    margin: 0px;
     padding: 0px;
-    list-style: none outside none;
 }
 #top nav.cart li {
     float: left;
@@ -42,4 +44,27 @@ body {
 	border:none;
 	padding-right: 0px;
 	margin-right:0px;
+}
+
+#top nav.header-menu {
+	padding: 8px 0px 0px;
+    margin: 0px 0px 0px -10px;
+}
+#top nav.header-menu ul {
+	background-color:blue;
+	display: inline-block;
+}
+#top nav.header-menu li {
+	float:left;
+}
+#top nav.header-menu .first a {
+    border-radius: 4px 0px 0px 4px;
+}
+#top nav.header-menu a {
+    color: rgb(102, 102, 102);
+    border-right: 1px dotted rgb(221, 221, 221);
+    font: 24px BebasNeueRegular,arial,sans-serif;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: block;
 }
