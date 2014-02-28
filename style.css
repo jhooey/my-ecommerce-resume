@@ -3,13 +3,22 @@
 	src: url("./fonts/BebasNeue.otf") format("opentype");
 	/*http://www.fontsquirrel.com/fonts/bebas-neue*/
 }
-
+html, body, div, span, object, iframe, p, blockquote, pre, abbr, address, cite, 
+code, del, dfn, img, ins, kbd, q, samp, small, sub, sup, var, dl, dt, dd, ol, 
+ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, 
+th, td, article, aside, canvas, details, figcaption, figure, footer, header, 
+hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    font: inherit;
+    vertical-align: baseline;
+}
 body {
 	border-top: 4px solid rgb(238, 238, 238);
 	font: 13px/1.231 Helvetica,Arial,sans-serif;
-	margin: 0;
 }
-.content-wrapper {
+.wrapper {
 	width: 980px;
 	margin: 0px auto;
 	padding: 0px 20px;
@@ -22,8 +31,7 @@ nav ul, nav li {
 }
 #top {
 	background-color:green;
-    padding: 50px 0px 0px;
-    margin: 0px 0px 30px;
+    padding: 50px 0px 0px 0px;
     position: relative;
 }
 #top #site-title {
@@ -95,4 +103,19 @@ nav ul, nav li {
     padding: 4px 10px;
     text-decoration: none;
     display: block;
+}
+.content-wrapper {
+	background-color:red;
+	margin: 0px;
+}
+.main-content-wrapper {
+	background-color:blue;
+	float: left;
+    width: 740px;
+    position: relative;
+}
+aside.sidebar {
+	background-color:yellow;
+	float:right;
+	width: 240px;
 }
