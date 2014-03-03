@@ -114,11 +114,14 @@ nav ul, nav li {
     position: relative;
     padding-top:16px;
     background: url('./images/main-border-top-information-div-color.png') repeat-x scroll 0px 0px transparent;
+	
+	background-color: red;
 }
-aside.sidebar {
-	background-color:yellow;
-	float:right;
-	width: 240px;
+section#featured-items {
+	display: inline-block;
+	padding-bottom: 20px;
+	
+	background-color:purple;
 }
 #featured-items ul {
 	list-style: none outside none;
@@ -146,9 +149,13 @@ li.item a.photo img {
 }
 #featured-items ul li.item div.infomation {
 	padding: 10px;
-	background-color:purple;
+	background-color:teal;
 }
-
+aside.sidebar {
+	background-color:yellow;
+	float:right;
+	width: 240px;
+}
 #bottom {
 	padding: 15px 0px;
 	margin: 25px 0px 50px;
