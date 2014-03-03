@@ -120,13 +120,13 @@ aside.sidebar {
 	float:right;
 	width: 240px;
 }
-ul#featured-items {
+#featured-items ul {
 	list-style: none outside none;
 	margin: 0px;
 	color: #666;
 }
 
-ul#featured-items li.item {
+#featured-items ul li.item {
 	width: 240px;
 	background: none repeat scroll 0% 0% #F6F6F6;
 	border-radius: 0px 0px 4px 4px;
@@ -134,17 +134,17 @@ ul#featured-items li.item {
 	margin: 0px 10px 10px 0px;
 	height: 400px;
 }
-ul#featured-items li.last-in-row {
+#featured-items ul li.last-in-row {
 	margin-right: 0px;
 }
-ul#featured-items li.item a.photo {
+#featured-items ul li.item a.photo {
 	max-width: 240px;
 	margin:0px;
 }
 li.item a.photo img {
 	display: block;
 }
-ul#featured-items li.item div.infomation {
+#featured-items ul li.item div.infomation {
 	padding: 10px;
 	background-color:purple;
 }
