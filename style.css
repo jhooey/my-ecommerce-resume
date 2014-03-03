@@ -138,14 +138,14 @@ ul#featured-items li.last-in-row {
 }
 ul#featured-items li.item a.photo {
 	max-width: 240px;
+	margin:0px;
+}
+li.item a.photo img {
+	display: block;
 }
 ul#featured-items li.item div.infomation {
 	padding: 10px;
-	position: relative;
-	background: none repeat scroll 0% 0% #F6F6F6;
-	border-radius: 0px 0px 4px 4px;
 }
-
 
 #bottom {
 	padding: 15px 0px;
