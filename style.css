@@ -119,6 +119,34 @@ aside.sidebar {
 	float:right;
 	width: 240px;
 }
+ul.items-list {
+	list-style: none outside none;
+	margin: 0px;
+	color: #666;
+}
+
+ul.items-list li.item {
+	width: 240px;
+	background: none repeat scroll 0% 0% #F6F6F6;
+	border-radius: 0px 0px 4px 4px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+	height: 400px;
+}
+ul.items-list li.last-in-row {
+	margin-right: 0px;
+}
+.item a.photo {
+	max-width: 240px;
+}
+.item div.infomation {
+	padding: 10px;
+	position: relative;
+	background: none repeat scroll 0% 0% #F6F6F6;
+	border-radius: 0px 0px 4px 4px;
+}
+
+
 #bottom {
 	padding: 15px 0px;
 	margin: 25px 0px 50px;
