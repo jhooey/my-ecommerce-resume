@@ -104,7 +104,6 @@ nav ul, nav li {
     display: block;
 }
 .content-wrapper {
-	background-color:red;
 	margin: 0px;
 }
 .main-content-wrapper, .additional-items {
@@ -118,16 +117,11 @@ nav ul, nav li {
     position: relative;
     padding-top:16px;
    
-	background-color: red;
+	background-color:#3399CC;/************************************************/
 }
 section#featured-items, section.additional-items {
 	display: inline-block;
 	padding-bottom: 20px;
-	
-	background-color:purple;
-}
-section.additional-items {
-	background-color:green;
 }
 #featured-items ul, .additional-items ul {
 	list-style: none outside none;
@@ -166,12 +160,14 @@ li.item a.photo img {
 }
 ul li.item div.infomation {
 	padding: 10px;
-	background-color:teal;
+	
+	background-color:#66CC99;/************************************************/
 }
 aside.sidebar {
-	background-color:yellow;
 	float:right;
 	width: 240px;
+	
+	background-color:#FFCC66;/************************************************/
 }
 #bottom {
 	padding: 15px 0px;
@@ -181,6 +177,5 @@ aside.sidebar {
 	overflow: hidden;
 	height: 1%;
 	background: none repeat scroll 0% 0% rgb(255, 255, 255);
-	background-color:orange;
 	color: rgb(153, 153, 153);
 }
