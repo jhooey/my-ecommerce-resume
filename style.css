@@ -117,13 +117,10 @@ nav ul, nav li, ul, li {
 
 }
 .main-content-wrapper {
-	background-color:blue;
 	float: left;
     width: 740px;
     position: relative;
     padding-top:16px;
-   
-	background-color:#3399CC;/************************************************/
 }
 section#featured-items, section.additional-items {
 	display: inline-block;
@@ -181,8 +178,6 @@ ul li.item section{
 aside.sidebar {
 	float:right;
 	width: 240px;
-	
-	background-color:#FFCC66;/************************************************/
 }
 aside.sidebar h1 {
     font: 22px BebasNeueRegular,arial,sans-serif;
