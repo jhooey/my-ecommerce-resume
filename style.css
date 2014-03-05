@@ -25,7 +25,7 @@ body {
 	min-height: 100%;
 	text-align: left;
 }
-nav ul, nav li {
+nav ul, nav li, ul, li {
     margin: 0px;
     list-style: none outside none;
 }
@@ -163,11 +163,21 @@ ul li.item div.infomation {
 	
 	background-color:#66CC99;/************************************************/
 }
+
 aside.sidebar {
 	float:right;
 	width: 240px;
 	
 	background-color:#FFCC66;/************************************************/
+}
+aside.sidebar h1 {
+    font: 22px BebasNeueRegular,arial,sans-serif;
+    margin-bottom:5px;
+}
+aside.sidebar section {
+	margin:0px 10px 0px 20px;
+	padding-bottom: 20px;
+	width: 210px;
 }
 #bottom {
 	padding: 15px 0px;
