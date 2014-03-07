@@ -255,12 +255,12 @@ ul li.item section{
 #item-information header h1 {        
 	float: left;
     width: 60%;
-    margin: 0px 0px 16px;
-    padding-right:10px;
+    margin: 0px 0px 16px 0px;
     
     background-color: lightblue;/********************************/
 }
 #item-information header aside {
+	margin: 0px;
 	float:right;
 	max-width:40%;
 	text-align:center;
