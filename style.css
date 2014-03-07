@@ -24,6 +24,15 @@ a {
 a:hover {
     color: #6DB038;
 }
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0px;
+    overflow: hidden;
+}
 .wrapper {
 	width: 980px;
 	margin: 0px auto;
@@ -125,6 +134,50 @@ nav ul, nav li, ul, li {
     position: relative;
     padding-top:16px;
 }
+aside.sidebar {
+	float:right;
+	width: 240px;
+}
+aside.sidebar h1 {
+    font: 22px BebasNeueRegular,arial,sans-serif;
+    margin-bottom:5px;
+}
+aside.sidebar section {
+	margin:0px 10px 0px 20px;
+	padding-bottom: 20px;
+	width: 210px;
+}
+#bottom {
+	padding: 15px 0px;
+	margin: 25px 0px 50px;
+	font-size: 11px;
+	clear: both;
+	overflow: hidden;
+	height: 1%;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	color: rgb(153, 153, 153);
+}
+.btn:hover, a.btn:hover {
+    background-color: #6DB038;
+    border: 1px solid #6DB038;
+    color: #FFF;
+}
+.btn, a.btn {
+    display: inline-block;
+    background-color: #666;
+    border-radius: 4px;
+    border: 1px solid #666;
+    color: #FFF !important;
+    padding: 5px 10px 4px;
+    text-decoration: none;
+    font-weight: bold !important;
+    font-family: Helvetica,Arial,sans-serif;
+    text-align: center;
+    cursor: pointer;
+    margin:0px;
+}
+
+/******************Main Page*****************************/
 section#featured-items, section.additional-items {
 	display: inline-block;
 	padding-bottom: 20px;
@@ -178,45 +231,15 @@ ul li.item section{
     padding: 0 10px 10px 10px;
     color:#000000;
 }
-aside.sidebar {
-	float:right;
-	width: 240px;
+
+/************************Item Page*************************/
+#item {
+	display:block;
+	background: none repeat scroll 0% 0% #F6F6F6;
 }
-aside.sidebar h1 {
-    font: 22px BebasNeueRegular,arial,sans-serif;
-    margin-bottom:5px;
-}
-aside.sidebar section {
-	margin:0px 10px 0px 20px;
-	padding-bottom: 20px;
-	width: 210px;
-}
-#bottom {
-	padding: 15px 0px;
-	margin: 25px 0px 50px;
-	font-size: 11px;
-	clear: both;
-	overflow: hidden;
-	height: 1%;
-	background: none repeat scroll 0% 0% rgb(255, 255, 255);
-	color: rgb(153, 153, 153);
-}
-.btn:hover, a.btn:hover {
-    background-color: #6DB038;
-    border: 1px solid #6DB038;
-    color: #FFF;
-}
-.btn, a.btn {
-    display: inline-block;
-    background-color: #666;
-    border-radius: 4px;
-    border: 1px solid #666;
-    color: #FFF !important;
-    padding: 5px 10px 4px;
-    text-decoration: none;
-    font-weight: bold !important;
-    font-family: Helvetica,Arial,sans-serif;
-    text-align: center;
-    cursor: pointer;
-    margin:0px;
+#item-information {
+	float: right;
+    width: 375px;
+    
+    background-color: lightgreen;
 }
