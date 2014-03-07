@@ -238,8 +238,35 @@ ul li.item section{
 	background: none repeat scroll 0% 0% #F6F6F6;
 }
 #item-information {
+    border-bottom: 1px solid #DDD;
+    margin: 15px;
+    padding:0px 0px 10px 0px;
 	float: right;
-    width: 375px;
+    width: 425px;
     
-    background-color: lightgreen;
+   background-color: lightgreen;/********************************/
 }
+#item header {
+    border-bottom: 1px solid #DDD;
+	margin: 15px 0px 20px;
+    padding-bottom:10px;
+}
+#item header h1 {        
+	float: left;
+    width: 60%;
+    margin: 0px 0px 16px;
+    padding-right:10px;
+    
+    background-color: lightblue;/********************************/
+}
+#item header aside {
+	float:right;
+	max-width:40%;
+	text-align:center;
+    background-color: lightyellow;/********************************/
+}
+#item header .btn {
+	margin: 5px auto;
+	float: right;
+}
+
