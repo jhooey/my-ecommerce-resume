@@ -236,22 +236,23 @@ ul li.item section{
 #item {
 	display:block;
 	background: none repeat scroll 0% 0% #F6F6F6;
+	padding:0 15px;
 }
 #item-information {
     border-bottom: 1px solid #DDD;
-    margin: 15px;
     padding:0px 0px 10px 0px;
+    margin:15px 0px;
 	float: right;
     width: 425px;
     
    background-color: lightgreen;/********************************/
 }
-#item header {
+#item-information header {
     border-bottom: 1px solid #DDD;
-	margin: 15px 0px 20px;
+	margin: 15px 0px 20px 0px;
     padding-bottom:10px;
 }
-#item header h1 {        
+#item-information header h1 {        
 	float: left;
     width: 60%;
     margin: 0px 0px 16px;
@@ -259,14 +260,29 @@ ul li.item section{
     
     background-color: lightblue;/********************************/
 }
-#item header aside {
+#item-information header aside {
 	float:right;
 	max-width:40%;
 	text-align:center;
     background-color: lightyellow;/********************************/
 }
-#item header .btn {
+#item-information header .btn {
 	margin: 5px auto;
 	float: right;
 }
-
+#item aside {
+	float:left;
+	width: 265px;
+    margin:15px 0px;
+    background-color: red;/********************************/
+}
+#item aside .photo {
+	width: 100%;
+}
+.thumbs li {
+    float: left;
+    margin: 5px 8px 8px 0px;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+}
