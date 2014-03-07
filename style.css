@@ -244,8 +244,6 @@ ul li.item section{
     margin:15px 0px;
 	float: right;
     width: 425px;
-    
-   background-color: lightgreen;/********************************/
 }
 #item-information header {
     border-bottom: 1px solid #DDD;
@@ -254,17 +252,16 @@ ul li.item section{
 }
 #item-information header h1 {        
 	float: left;
+	font-size:30px;
     width: 60%;
     margin: 0px 0px 16px 0px;
     
-    background-color: lightblue;/********************************/
 }
 #item-information header aside {
 	margin: 0px;
 	float:right;
 	max-width:40%;
 	text-align:center;
-    background-color: lightyellow;/********************************/
 }
 #item-information header .btn {
 	margin: 5px auto;
@@ -274,7 +271,6 @@ ul li.item section{
 	float:left;
 	width: 265px;
     margin:15px 0px;
-    background-color: red;/********************************/
 }
 #item aside .photo {
 	width: 100%;
