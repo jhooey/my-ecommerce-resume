@@ -35,6 +35,9 @@
 			// public methods invocation
 			
 			
+		},
+		_emptyCart: function() {
+			this.storage.clear();
 		}
 	};
 
