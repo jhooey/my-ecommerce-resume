@@ -4,3 +4,16 @@ template_files/fonts
 template_files/js/jquery-2.1.0.min.js
 
 
+#Rails files
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+
