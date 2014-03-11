@@ -1,4 +1,3 @@
-
 (function( $ ) {
 	$.Shop = function( element ) {
 		this.$element = $( element ); // top-level element
@@ -11,7 +10,7 @@
 			this.cartName = "resume-cart";
 			this.storage = sessionStorage;
 			
-			this.$formAddToCart = this.$element.find( "form.add-to-cart" );
+			this.$formAddToCart = this.$element.find( "form.add-to-cart" ); 
 			this.$formCart = this.$element.find( "#shopping-cart" );
 			this.$checkoutCart = this.$element.find( "#checkout-cart" );
 			this.$checkoutOrderForm = this.$element.find( "#checkout-order-form" );
@@ -21,6 +20,7 @@
 			this.$userDetails = this.$element.find( "#user-details-content" );
 			
 			this.createCart();
+			this.handleAddToCartForm();
 			
 		},
 		// public methods invocation
@@ -64,6 +64,7 @@
 		 * @returns void
 		 */
 		_addToCart: function( values ) {
+		alert('start');
 			var cart = this.storage.getItem( this.cartName );
 			var cartObject = this._toJSONObject( cart );
 			var cartCopy = cartObject;
@@ -103,9 +104,8 @@
 				var name = $product.children("header").children("h1").text().trim();
 		
 				$form.on( "submit", function() {
-					alert(name);
 					self._addToCart({
-						product: name
+						product: name,
 					});
 				});
 			});
