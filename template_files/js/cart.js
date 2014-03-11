@@ -38,6 +38,24 @@
 		},
 		_emptyCart: function() {
 			this.storage.clear();
+		},
+		
+		/* Converts a JSON string to a JavaScript object
+		 * @param str String the JSON string
+		 * @returns obj Object the JavaScript object
+		 */
+		_toJSONObject: function( str ) {
+			var obj = JSON.parse( str );
+			return obj;
+		},
+		
+		/* Converts a JavaScript object to a JSON string
+		 * @param obj Object the JavaScript object
+		 * @returns str String the JSON string
+		 */
+		_toJSONString: function( obj ) {
+			var str = JSON.stringify( obj );
+			return str;
 		}
 	};
 
