@@ -69,7 +69,29 @@
 			items.push( values );
 		
 			this.storage.setItem( this.cartName, this._toJSONString( cartCopy ) );
-		}
+		},
+		
+		/* Save the data entered by the user in the checkout form
+		 * @param form Object the jQuery element of the checkout form
+		 * @returns void
+		 */
+		_saveFormData: function( form ) {
+			var self = this;
+			var $visibleSet = form.find( "fieldset:visible" );
+					
+			$visibleSet.each(function() {
+				var $set = $( this );
+				var name = $( "#name", $set ).val();
+				var email = $( "#email", $set ).val();
+				var company = $( "#company", $set ).val();
+				
+				self.storage.setItem( "user-name", name );
+				self.storage.setItem( "user-email", email );
+				self.storage.setItem( "suer-company", company );
+			});
+		},
+		
+		
 		
 		
 	};
