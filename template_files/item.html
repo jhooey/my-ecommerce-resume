@@ -22,18 +22,23 @@
 	</head>
 
 	<body>
-		<div class="wrapper">
+		<div id="shopify-resume" class="wrapper">
 			<header id="top">
 				<h1 id="site-title">index</h1>
 
-				<nav class="cart">
-					<ul>
-						<li><a href="./index.html">Home</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">0 items</a></li>
-						<li class="last"><a class="btn" href="/contact">Check out</a></li>
-						
-					</ul>
+				<nav class="cart-menu">
+						<ul>
+							<li><a href="./index.html">Home</a></li>
+							<li class="checkout cart-items"><a href="#">0 items</a>
+								<ul id="shopping-cart">
+									<li>Test 1</li>
+									<li>Test 2</li>
+									<li>Test 3</li>
+									<li>Test 4</li>
+								</ul>
+							</li>
+							<li class="checkout last"><a class="btn" href="/contact">Check out</a></li>
+						</ul>
 				</nav>
 				<!--Main navigation is not needed for this cover letter
 				<nav class="header-menu">
@@ -94,6 +99,24 @@
 			</footer>
 		</div>
 		
+		
+		<script>
+		$(document).ready(function () {	
+	
+			$('nav .checkout').hover(
+				function () {
+					//show its submenu
+					$('ul#shopping-cart').stop().slideDown(100);
+		
+				}, 
+				function () {
+					//hide its submenu
+					$('ul#shopping-cart').stop().slideUp(100);			
+				}
+			);
+			
+		});
+		</script>
 		<script type="text/javascript">
 	         function swap(image) {
 	             document.getElementById("main-image").src = image.href;
