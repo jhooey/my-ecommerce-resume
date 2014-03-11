@@ -10,14 +10,15 @@
 		<title>My Shopify Resume - Jacob Hooey</title>
 		<meta name="description" content="">
 		<meta name="author" content="ad-HooeyJ">
-
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		
 		<link rel="stylesheet" href="./style.css">
 		
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script src="js/cart.js"></script>
 	</head>
 
 	<body>
@@ -46,7 +47,6 @@
 			</header>
 			<div class="content-wrapper">
 				<div class="main-content-wrapper">
-					
 					<form id="item" class="add-to-cart clearfix">
 						<section id="item-information">
 							<header class="clearfix">
@@ -55,7 +55,7 @@
 								</h1>
 								<aside>
 									<p class="availability">In Stock</p>
-									<a class="btn" href="/contact">Add to Cart</a>
+									<input type="submit" value="Add to Cart" class="btn" >
 								</aside>
 							</header>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et euismod turpis, in lacinia nibh. Ut tempor semper sapien, eu eleifend nisl euismod in. Quisque blandit accumsan nisl, eget porta tellus luctus tristique. Donec venenatis interdum mauris eu ullamcorper. Aenean id metus ligula. Sed facilisis lacinia nisl, suscipit lacinia diam condimentum a. Curabitur iaculis sem vel consectetur tristique. Nunc ut convallis arcu.
@@ -68,7 +68,6 @@
 							</ul>
 						</aside>
 					</form>
-					
 				</div>
 			</div>
 			<aside class="sidebar">

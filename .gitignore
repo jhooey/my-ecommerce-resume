@@ -1,5 +1,6 @@
 .project
 fonts
+template_files/fonts
 template_files/js/jquery-2.1.0.min.js
 
 

@@ -27,6 +27,7 @@
 		// Creates the cart keys in session storage
 
 		createCart: function() {
+			//tests whether our values have already been added to session storage
 			if( this.storage.getItem( this.cartName ) == null ) {
 		
 				var cart = {};
@@ -35,6 +36,7 @@
 				this.storage.setItem( this.cartName, this._toJSONString( cart ));
 			}
 		},
+		
 		_emptyCart: function() {
 			this.storage.clear();
 		},
@@ -91,7 +93,23 @@
 			});
 		},
 		
+		// Adds items to shopping cart
+
+		handleAddToCartForm: function() {
+			var self = this;
+			self.$formAddToCart.each(function() {
+				var $form = $( this );
+				var $product = $form.children("#item-information");
+				var name = $product.children("header").children("h1").text().trim();
 		
+				$form.on( "submit", function() {
+					alert(name);
+					self._addToCart({
+						product: name
+					});
+				});
+			});
+		}
 		
 		
 	};
