@@ -54,7 +54,7 @@ nav ul, nav li, ul, li {
     margin: 0px;
     text-transform:uppercase;
 }
-#top nav.cart {
+#top nav.cart-menu {
 	background: none repeat scroll 0% 0% rgb(238, 238, 238);
 	padding: 0px 10px 0px 12px;
 	font-size: 12px;
@@ -65,45 +65,57 @@ nav ul, nav li, ul, li {
 	border-radius: 0px 0px 6px 6px;
 	color: rgb(102, 102, 102);
 }
-#top nav.cart ul {
+#top nav.cart-menu ul {
     padding: 0px;
 }
-#top nav.cart li {
+#top nav.cart-menu li {
     float: left;
     padding: 6px 12px 10px 0px;
     margin: 0px 12px 0px 0px;
     border-right: 1px solid rgb(204, 204, 204);
     font-weight: normal;
+		position:relative;
 }
-#top nav.cart li.last {
+#top nav.cart-menu li.last {
 	border:none;
 	padding: 0px;
 	margin-right:0px;
 	
 }
-#top nav.cart a {
+#top nav.cart-menu a {
 	color: rgb(102, 102, 102);
 	text-decoration: none;
 	font-weight: normal;
 }
-#top nav.cart a:hover {
+#top nav.cart-menu a:hover {
 	color: rgb(109, 176, 56);
 }
-/*
-#top nav.header-menu {
-	text-transform:uppercase;
-	padding: 8px 0px 0px;
-    margin: 0px 0px 0px -10px;
+/* submenu, it's hidden by default */
+#top nav.cart-menu .checkout ul{
+    border-right: 1px solid rgb(204, 204, 204);
+    border-left: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+	position:absolute; 
+	left:0px; 
+	top: 30px;
+	display:none; 
+	margin:0 0 0 -50px; 
+	padding:0; 
+	list-style:none;
+	width:200px; 
+	background-color:#F6F6F6;
+	z-index:9999;
 }
-#top nav.header-menu ul {
-	display: inline-block;
-	padding: 8px 0px 0px;
-    margin: 0px 0px 0px 0px;
-}
-#top nav.header-menu li {
+#top nav.cart-menu .checkout ul li {
+	width:100%;
 	float:left;
+	display:inline-block;  
+	height:25px;
+	padding: 8px 5px; 
+	color:#666;
+	border:none ;
 }
-*/
+
 #top nav.header-menu li a {}
 #top nav.header-menu li.first a {}
 #top nav.header-menu li.last a {
@@ -254,8 +266,7 @@ ul li.item section{
 	float: left;
 	font-size:30px;
     width: 60%;
-    margin: 0px 0px 16px 0px;
-    
+    margin: 0px 0px 16px 0px;    
 }
 #item-information header aside {
 	margin: 0px;
