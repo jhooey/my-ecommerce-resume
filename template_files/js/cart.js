@@ -20,21 +20,20 @@
 			this.$emptyCartBtn = this.$shoppingCartActions.find( "#empty-cart" );
 			this.$userDetails = this.$element.find( "#user-details-content" );
 			
-			// object containing patterns for form validation
-			this.requiredFields = {
-				expression: {
-					value: /^([\w-\.]+)@((?:[\w]+\.)+)([a-z]){2,4}$/
-				},
+			this.createCart();
+			
+		},
+		// public methods invocation
+		// Creates the cart keys in session storage
 
-				str: {
-					value: ""
-				}
-
-			};
-			
-			// public methods invocation
-			
-			
+		createCart: function() {
+			if( this.storage.getItem( this.cartName ) == null ) {
+		
+				var cart = {};
+				cart.items = [];
+					
+				this.storage.setItem( this.cartName, this._toJSONString( cart ));
+			}
 		},
 		_emptyCart: function() {
 			this.storage.clear();
@@ -56,7 +55,23 @@
 		_toJSONString: function( obj ) {
 			var str = JSON.stringify( obj );
 			return str;
+		},
+		
+		/* Add an object to the cart as a JSON string
+		 * @param values Object the object to be added to the cart
+		 * @returns void
+		 */
+		_addToCart: function( values ) {
+			var cart = this.storage.getItem( this.cartName );
+			var cartObject = this._toJSONObject( cart );
+			var cartCopy = cartObject;
+			var items = cartCopy.items;
+			items.push( values );
+		
+			this.storage.setItem( this.cartName, this._toJSONString( cartCopy ) );
 		}
+		
+		
 	};
 
 	$(function() {
