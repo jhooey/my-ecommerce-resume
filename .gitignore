@@ -2,7 +2,7 @@
 fonts
 template_files/fonts
 template_files/js/jquery-2.1.0.min.js
-
+nbproject
 
 #Rails files
 # Ignore bundler config.
@@ -17,3 +17,4 @@ template_files/js/jquery-2.1.0.min.js
 /tmp
 
 
+/nbproject/private/
