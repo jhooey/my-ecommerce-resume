@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+=require cart
+//javascript_include_tag 'product', 'cart'
