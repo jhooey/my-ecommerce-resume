@@ -25,5 +25,26 @@ class ProductsController < ApplicationController
                                     :in_stock)
   end
 
+  
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
 
+    redirect_to products_path
+  end
+  
+  
+  
+  def edit
+    @product = Product.find(params[:id])
+  end
+  def update
+    @product = Product.find(params[:id])
+
+    if @product.update(params[:post].permit(:title, :short,:long,:images,:featured,:in_stock))
+      redirect_to @product
+    else
+      render 'edit'
+    end
+  end
 end

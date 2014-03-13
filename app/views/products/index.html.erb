@@ -18,6 +18,9 @@
       <td><%= product.images %></td>
       <td><%= product.featured %></td>
       <td><%= product.in_stock %></td>
+      <td><%= link_to 'Show', product %></td>
+      <td><%= link_to 'Edit', edit_product_path(product) %></td>
+      <td><%= link_to 'Destroy', product_path(product), confirm: 'Are you sure?', :method => :delete, :class => "submit-button" %></td>
     </tr>
   <% end %>
 </table>
