@@ -18,8 +18,11 @@ ActiveRecord::Schema.define(version: 20140312003000) do
 
   create_table "products", force: true do |t|
     t.string   "title"
-    t.text     "text"
+    t.text     "short"
+    t.text     "long"
+    t.string   "images"
     t.boolean  "featured"
+    t.boolean  "in_stock"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

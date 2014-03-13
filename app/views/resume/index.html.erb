@@ -3,9 +3,9 @@
            <% @featured_products.each do |product, index| %>
                 <li class="item" >
                         <a href="./item.html">
-                                <img class="photo" src="/assets/item-image-placeholder.png">
+                                <img class="photo" src="<%=product.images.split(',')[0]%>">
                                 <header><%= product.title %></header>
-                                <section><td><%= product.text %></td></section>
+                                <section><td><%= product.short %></td></section>
                         </a>
                 </li>
                 <% end %>
