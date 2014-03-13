@@ -40,10 +40,16 @@ class ProductsController < ApplicationController
   def edit
     @product = Product.find(params[:id])
   end
+  
   def update
     @product = Product.find(params[:id])
 
-    if @product.update(params[:post].permit(:title, :short,:long,:images,:featured,:in_stock))
+    if @product.update(params[:product].permit(:title, 
+                                    :short, 
+                                    :long, 
+                                    :images, 
+                                    :featured, 
+                                    :in_stock))
       redirect_to @product
     else
       render 'edit'
