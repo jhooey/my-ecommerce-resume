@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <title>My Shopify Resume - Jacob Hooey</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag  'jquery-ui-1.10.4.custom.min',  "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application",'jquery-ui-1.10.4.custom.min.js', "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -60,9 +60,18 @@
 			</footer>
 		</div>
 		
+		<script type="text/javascript">
+	         function swap(image) {
+	             document.getElementById("main-image").src = image.href;
+	         }
+	     </script>
 		
 		<script>
 		$(document).ready(function () {	
+                        $(function() {
+                          $( "#tabs" ).tabs();
+                        });
+                        $( "#tabs" ).appendTo(".main-content-wrapper");
 	
 			$('nav .checkout').hover(
 				function () {
@@ -78,11 +87,6 @@
 			
 		});
 		</script>
-		<script type="text/javascript">
-	         function swap(image) {
-	             document.getElementById("main-image").src = image.href;
-	         }
-	     </script>
 	</body>
 </html>
 
