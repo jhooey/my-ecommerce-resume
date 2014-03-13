@@ -70,7 +70,6 @@
 		 * @returns void
 		 */
 		_addToCart: function( values ) {
-		alert('start');
 			var cart = this.storage.getItem( this.cartName );
 			var cartObject = this._toJSONObject( cart );
 			var cartCopy = cartObject;
