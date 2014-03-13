@@ -1,28 +1,19 @@
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
- 
-<p>
-  <strong>Short:</strong>
-  <%= @product.short %>
-</p>
-<p>
-  <strong>Long:</strong>
-  <%= @product.long %>
-</p>
- 
-<p>
-  <strong>images:</strong>
-  <%= @product.images %>
-</p>
-<p>
-  <strong>Featured:</strong>
-  <%= @product.featured %>
-</p>
- 
-<p>
-  <strong>In stock:</strong>
-  <%= @product.in_stock %>
-</p>
-<%= link_to 'Back', products_path %>
+<form id="item" class="add-to-cart clearfix">
+  <section id="item-information">
+          <header class="clearfix">
+                  <h1><%= @product.title %></h1>
+                  <aside>
+                          <p class="availability"><%=@product.in_stock ? 'In Stock' : 'Out of Stock'%></p>
+                          <input type="submit" value="Add to Cart" class="btn" >
+                  </aside>
+          </header>
+          <%= @product.long %>
+  </section>
+  <aside class="clearfix">
+          <img id="main-image" class="photo" src="<%=@product.images.split(',')[0]%>">
+          <ul class="thumbs">
+                  <li><a href="./images/item-image-placeholder.png" onclick="swap(this); return false;"><img class="photo" src="./images/item-image-placeholder.png"></a></li>
+                  <li><a href="./images/item-image-placeholder2.png" onclick="swap(this); return false;"><img class="photo" src="./images/item-image-placeholder2.png"></a></li>
+          </ul>
+  </aside>
+</form>

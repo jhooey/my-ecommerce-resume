@@ -2,11 +2,12 @@
         <ul>
            <% @featured_products.each do |product, index| %>
                 <li class="item" >
-                        <a href="./item.html">
+                        <%= link_to product do %>
                                 <img class="photo" src="<%=product.images.split(',')[0]%>">
                                 <header><%= product.title %></header>
                                 <section><td><%= product.short %></td></section>
-                        </a>
+                       <%end%>
+                  
                 </li>
                 <% end %>
         </ul>

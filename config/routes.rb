@@ -1,6 +1,5 @@
 MyShopifyResume::Application.routes.draw do
   get "resume/index"
-  get "products/new"
 
   resources :products
   # The priority is based upon order of creation: first created -> highest priority.

@@ -14,6 +14,8 @@ class ProductsController < ApplicationController
   
   def show
     @product = Product.find(params[:id])
+    @product.short = @product.short.html_safe
+    @product.long = @product.long.html_safe
   end
 
   def product_params
