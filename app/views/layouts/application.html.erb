@@ -1,14 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MyShopifyResume</title>
+  <title>My Shopify Resume - Jacob Hooey</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+		<div id="shopify-resume" class="wrapper">
+			<header id="top">
+				<h1 id="site-title">index</h1>
 
-<%= yield %>
+				<nav class="cart-menu">
+						<ul>
+							<li><a href="./index.html">Home</a></li>
+							<li class="checkout cart-items"><a href="#">0 items</a>
+								<ul id="shopping-cart">
+									<li>Test 1</li>
+									<li>Test 2</li>
+									<li>Test 3</li>
+									<li>Test 4</li>
+								</ul>
+							</li>
+							<li class="checkout last"><a class="btn" href="/contact">Check out</a></li>
+						</ul>
+				</nav>
+				<!--Main navigation is not needed for this cover letter
+				<nav class="header-menu">
+					<ul>
+						<li class="first"><a href="">Home</a></li>
+						<li><a class="active" href="">More Information</a></li>
+						<li class="last"><a href="">Contact Me</a></li>
+					</ul>
+				</nav>
+				-->
+			</header>
+			<div class="content-wrapper">
+				<div class="main-content-wrapper">
+	
+                                  <%= yield %>
 
-</body>
+                                </div>
+			<aside class="sidebar">
+				<section class="contact-info">
+						<h1>Contact Me</h1>
+						<ul>
+							<li>Jacob Hooey</li>
+							<li>jhooey@gmail.com</li>
+						</ul>
+				</section>
+				<section class="additional-info">
+						<h1>Additional Info</h1>
+						<ul>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+						</ul>
+				</section>
+			</aside>
+
+			<footer id="bottom">
+				<p>
+					&copy; Copyright by Jacob Hooey
+				</p>
+			</footer>
+		</div>
+		
+		
+		<script>
+		$(document).ready(function () {	
+	
+			$('nav .checkout').hover(
+				function () {
+					//show its submenu
+					$('ul#shopping-cart').stop().slideDown(100);
+		
+				}, 
+				function () {
+					//hide its submenu
+					$('ul#shopping-cart').stop().slideUp(100);			
+				}
+			);
+			
+		});
+		</script>
+		<script type="text/javascript">
+	         function swap(image) {
+	             document.getElementById("main-image").src = image.href;
+	         }
+	     </script>
+	</body>
 </html>
+
