@@ -1,27 +1,16 @@
-<section id="featured-items" class="clearfix">
+    <section id="featured-items" class="clearfix">
         <ul>
+           <% @featured_products.each do |product, index| %>
                 <li class="item" >
                         <a href="./item.html">
                                 <img class="photo" src="/assets/item-image-placeholder.png">
-                                <header>Application Developer</header>
-                                <section>short Cover letter here</section>
+                                <header><%= product.title %></header>
+                                <section><td><%= product.text %></td></section>
                         </a>
                 </li>
-                <li class="item">
-                        <a href="./item.html">
-                                <img class="photo" src="/assets/item-image-placeholder.png">
-                                <header>Artwork</header>
-                                <section>Description of artwork here</section>
-                        </a>
-                </li>
-                <li class="item last-in-row" >
-                        <a href="./item.html">
-                                <img class="photo" src="/assets/item-image-placeholder.png">
-                                <header>Projects</header>
-                                <section>Description of Projects here</section>
-                        </a>
-                </li>
+                <% end %>
         </ul>
+      
 </section>
 <section class="additional-items" class="clearfix">
         <h1>Additional Items</h1>
