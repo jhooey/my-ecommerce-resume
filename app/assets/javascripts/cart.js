@@ -128,6 +128,7 @@
                     if (!( this.$formCart.children().length > 0 )) {
                          this.$formCart.append( "<li class='no-items'>You have not selected any items yet</li>" );
                     }
+                    $("#number-of-items").text($('ul#shopping-cart li').length);
 			
 		}
 		
