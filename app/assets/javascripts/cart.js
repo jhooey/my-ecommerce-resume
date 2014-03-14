@@ -117,42 +117,18 @@
 		},
 		
 		displayCart: function() {
-			if( this.$formCart.length ) {
-				this.$formCart.empty();
+                    this.$formCart.empty();
+
+                    var cart = this._toJSONObject( this.storage.getItem( this.cartName ) );
+                    var items = cart.items;
+
+                    for( var i = 0; i < items.length; ++i ) {
+                            this.$formCart.append( "<li class='item-name'>" + items[i].product + "</li>" );
+                    }
+                    if (!( this.$formCart.children().length > 0 )) {
+                         this.$formCart.append( "<li class='no-items'>You have not selected any items yet</li>" );
+                    }
 			
-				var cart = this._toJSONObject( this.storage.getItem( this.cartName ) );
-				var items = cart.items;
-		
-				for( var i = 0; i < items.length; ++i ) {
-					this.$formCart.append( "<li class='item-name'>" + items[i].product + "</li>" );
-				}
-				if (!( this.$formCart.children().length > 0 )) {
-				     this.$formCart.append( "<li class='no-items'>You have not selected any items yet</li>" );
-				}
-			} else if( this.$checkoutCart.length ) {
-			/*
-				var checkoutCart = this._toJSONObject( this.storage.getItem( this.cartName ) );
-				var cartItems = checkoutCart.items;
-				var $cartBody = this.$checkoutCart.find( "tbody" );
-		
-				for( var j = 0; j < cartItems.length; ++j ) {
-					var cartItem = cartItems[j];
-					var cartProduct = cartItem.product;
-					var cartPrice = this.currency + " " + cartItem.price;
-					var cartQty = cartItem.qty;
-					var cartHTML = "<tr><td class='pname'>" + cartProduct + "</td>" + "<td class='pqty'>" + cartQty + "</td>" + "<td class='pprice'>" + cartPrice + "</td></tr>";
-		
-					$cartBody.html( $cartBody.html() + cartHTML );
-				}
-		
-				var cartTotal = this.storage.getItem( this.total );
-				var cartShipping = this.storage.getItem( this.shippingRates );
-				var subTot = this._convertString( cartTotal ) + this._convertString( cartShipping );
-		
-				this.$subTotal[0].innerHTML = this.currency + " " + this._convertNumber( subTot );
-				this.$shipping[0].innerHTML = this.currency + " " + cartShipping;
-			*/		
-			}
 		}
 		
 		
