@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+  
+  http_basic_authenticate_with name: "jhooey", password: "abc123", except: [:show]
+  
   def new
   end
 
