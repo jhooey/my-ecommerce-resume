@@ -3,7 +3,7 @@
            <% @featured_products.each do |product, index| %>
                 <li class="item" >
                         <%= link_to product do %>
-                                <img class="photo" src="<%=product.images.split(',')[0]%>">
+                                <img class="photo" src="/assets/<%=product.images.split(',')[0]%>">
                                 <header><%= product.title %></header>
                                 <section><td><%= product.short %></td></section>
                        <%end%>

@@ -7,7 +7,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :images
       t.boolean :featured
       t.boolean :in_stock
- 
+
       t.timestamps
     end
   end

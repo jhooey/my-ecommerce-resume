@@ -2,8 +2,16 @@
 
 one:
   title: MyString
-  text: MyText
+  short: MyText
+  long: MyText
+  images: MyString
+  featured: false
+  in_stock: false
 
 two:
   title: MyString
-  text: MyText
+  short: MyText
+  long: MyText
+  images: MyString
+  featured: false
+  in_stock: false
