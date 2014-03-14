@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MyShopifyResume::Application.config.secret_key_base = '658a0f91e9d48d25603030791818859ef0ba5f6a4d18fbf49eef3106f437808abb3bf8ed6544dcf6ae2a3e80dd42c8410e268d249448ac6646196d2de4356bfe'
+MyShopifyResume::Application.config.secret_key_base = '30b107b4c01f014de0b58dbfa03a48c072800273d9421ab09802e36ba6592e56ba459dc0dd5aa592186465339755e9b59dd6162d4f083e4404cde36399ef12cc'
