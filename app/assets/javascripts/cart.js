@@ -117,18 +117,31 @@
 		},
 		
 		displayCart: function() {
-                    this.$formCart.empty();
+                    if( this.$formCart.length ) {
+                        this.$formCart.empty();
 
-                    var cart = this._toJSONObject( this.storage.getItem( this.cartName ) );
-                    var items = cart.items;
+                        var cart = this._toJSONObject( this.storage.getItem( this.cartName ) );
+                        var items = cart.items;
 
-                    for( var i = 0; i < items.length; ++i ) {
-                            this.$formCart.append( "<li class='item-name'>" + items[i].product + "</li>" );
-                    }
-                    if (!( this.$formCart.children().length > 0 )) {
-                         this.$formCart.append( "<li class='no-items'>You have not selected any items yet</li>" );
-                    }
-                    $("#number-of-items").text($('ul#shopping-cart li').length);
+                        for( var i = 0; i < items.length; ++i ) {
+                                this.$formCart.append( "<li class='item-name'>" + items[i].product + "</li>" );
+                        }
+                        if (!( this.$formCart.children().length > 0 )) {
+                             this.$formCart.append( "<li class='no-items'>You have not selected any items yet</li>" );
+                        }
+                        $("#number-of-items").text($('ul#shopping-cart li').length);
+                    } 
+                    if( this.$checkoutCart.length ) {
+
+                        var cart = this._toJSONObject( this.storage.getItem( this.cartName ) );
+                        var items = cart.items;
+                        var cart_list = "";
+                        for( var i = 0; i < items.length; ++i ) {
+                                cart_list = cart_list.concat("- " + items[i].product + "\n");
+                                this.$checkoutCart.val(cart_list);
+                        }
+                        
+                    }    
 			
 		}
 		
