@@ -18,16 +18,6 @@ class ProductsController < ApplicationController
     @product.long = @product.long.html_safe
   end
 
-  def product_params
-   params.require(:product).permit(:title, 
-                                    :short, 
-                                    :long, 
-                                    :images, 
-                                    :featured, 
-                                    :in_stock)
-  end
-
-  
   def destroy
     @product = Product.find(params[:id])
     @product.destroy
@@ -54,5 +44,15 @@ class ProductsController < ApplicationController
     else
       render 'edit'
     end
+  end
+
+private
+  def product_params
+   params.require(:product).permit(:title, 
+                                    :short, 
+                                    :long, 
+                                    :images, 
+                                    :featured, 
+                                    :in_stock)
   end
 end

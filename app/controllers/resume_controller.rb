@@ -3,7 +3,6 @@ class ResumeController < ApplicationController
     @featured_products = Product.is_featured(true)
     @regular_products = Product.is_featured(false)
   end
-  def checkout
-    
+  def new
   end
 end

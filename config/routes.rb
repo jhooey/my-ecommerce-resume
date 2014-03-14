@@ -1,7 +1,7 @@
 MyShopifyResume::Application.routes.draw do
   get "resume/index"
   get "resume/checkout"
-
+  
   resources :products
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: my-shopify-resume_development
+  database: my-resume_development
   pool: 5
   username: jhooey
   password: abc123
@@ -46,7 +46,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: my-shopify-resume_test
+  database: my-resume_test
   pool: 5
   username: jhooey
   password: abc123
@@ -54,7 +54,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: my-shopify-resume_production
+  database: my-resume_production
   pool: 5
-  username: jhooey
+  username: my-resume
   password: abc123
