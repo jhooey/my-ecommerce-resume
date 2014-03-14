@@ -1,48 +1,31 @@
     <section id="featured-items" class="clearfix">
         <ul>
-           <% @featured_products.each do |product, index| %>
-                <li class="item" >
-                        <%= link_to product do %>
-                                <img class="photo" src="/assets/<%=product.images.split(',')[0]%>">
-                                <header><%= product.title %></header>
-                                <section><td><%= product.short %></td></section>
-                       <%end%>
-                  
-                </li>
+           <% @featured_products.each_with_index do |product, index| %>
+             <%index += 1%>
+             <li class="item <%= index % 3 == 0 ? "last-in-row" : "" %>" >
+                    <%= link_to product do %>
+                            <img class="photo" src="/assets/<%=product.images.split(',')[0]%>">
+                            <header><%= product.title %></header>
+                            <section><td><%= product.short %></td></section>
+                   <%end%>
+
+             </li>
                 <% end %>
         </ul>
       
 </section>
 <section class="additional-items" class="clearfix">
-        <h1>Additional Items</h1>
-        <ul>
-                <li class="item" >
-                        <a href="./item.html">
-                                <img class="photo" src="/assets/item-image-placeholder.png">
-                                <header>Autograph</header>
-                                <section>Can be used on volunteer sheets, foozeball tournament signup sheets or even contracts!</section>
-                        </a>
-                </li>
-                <li class="item">
-                        <a href="./item.html">
-                                <img class="photo" src="/assets/item-image-placeholder.png">
-                                <header>One on One Meet-up</header>
-                                <section>short description here</section>
-                        </a>
-                </li>
-                <li class="item">
-                        <a href="./item.html">
-                                <img class="photo" src="/assets/item-image-placeholder.png">
-                                <header>Test 3</header>
-                                <section>short description here</section>
-                        </a>
-                </li>
-                <li class="item last-in-row">
-                        <a href="./item.html">
-                                <img class="photo" src="/assets/item-image-placeholder.png">
-                                <header>Test 4</header>
-                                <section>short description here</section>
-                        </a>
-                </li>
-        </ul>
+  <h1>Additional Items</h1>
+  <ul>
+    <% @regular_products.each_with_index do |product, index| %>
+      <%index += 1%>
+      <li class="item <%= index % 4 == 0 ? "last-in-row" : "" %>" >
+        <%= link_to product do %>
+          <img class="photo" src="/assets/<%=product.images.split(',')[0]%>">
+          <header><%= product.title %></header>
+          <section><%= product.short %></section>
+        <%end%>
+      </li>
+    <% end %>
+  </ul>
 </section>
