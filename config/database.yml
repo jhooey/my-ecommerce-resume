@@ -54,7 +54,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: my-shopify-resume_production
+  database: d4388ie0pgul4k
   pool: 5
-  username: jhooey
-  password: abc123
+  username: vaojpwhlcxwsdm
+  password: Lbw4lSEb1vIAA2goRoBHQ4zqPH
