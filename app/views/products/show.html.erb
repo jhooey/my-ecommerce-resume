@@ -10,10 +10,16 @@
           <%= @product.long %>
   </section>
   <aside class="clearfix">
-          <img id="main-image" class="photo" src="/assets/<%=@product.images.split(',')[0]%>">
+          <%@images = @product.images.split(',')%>
+          <img id="main-image" class="photo" src="/assets/<%=@images[0]%>">
           <ul class="thumbs">
-                  <li><a href="/assets/item-image-placeholder.png" onclick="swap(this); return false;"><img class="photo" src="./images/item-image-placeholder.png"></a></li>
-                  <li><a href="/assets/item-image-placeholder2.png" onclick="swap(this); return false;"><img class="photo" src="./images/item-image-placeholder2.png"></a></li>
+            <% @images.each do |image| %>
+              <li>
+                <a href="/assets/<%=image%>" onclick="swap(this); return false;">
+                  <img class="photo" src="/assets/<%=image%>">
+                </a>
+              </li>
+            <%end%>
           </ul>
   </aside>
 </form>
