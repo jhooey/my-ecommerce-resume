@@ -132,7 +132,7 @@
                         } else {
                             $("#number-of-items").text($('ul#shopping-cart li').length);
                         }
-                    } 
+                    }
                     if( this.$checkoutCart.length ) {
 
                         var cart = this._toJSONObject( this.storage.getItem( this.cartName ) );
@@ -143,7 +143,7 @@
                                 this.$checkoutCart.val(cart_list);
                         }
                         
-                    }    
+                    } 
 			
 		}
 		
@@ -151,7 +151,7 @@
 	};
 
 	$(function() {
-		var shop = new $.Shop( "#shopify-resume" ); // object's instance
+            var shop = new $.Shop( "#shopify-resume" ); // object's instance
 	});
 
 })( jQuery );
