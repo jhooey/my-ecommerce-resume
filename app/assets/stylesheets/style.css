@@ -205,11 +205,11 @@ section#featured-items, section.additional-items {
 	border-radius: 0px 0px 4px 4px;
 	float: left;
 	margin: 0px 10px 10px 0px;
-	height: 400px;
+	height: 500px;
 }
 .additional-items ul li.item {
 	width: 179px;
-	height: 250px;
+	height: 350px;
 	margin-right: 8px;
 }
 li.last-in-row {
