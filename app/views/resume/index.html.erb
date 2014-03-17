@@ -1,6 +1,6 @@
     <section id="featured-items" class="clearfix">
         <ul>
-           <% @featured_products.each_with_index do |product, index| %>
+           <% @featured_products.sort{|a,b| a.created_at <=> b.created_at}.each_with_index do |product, index| %>
              <%index += 1%>
              <li class="item <%= index % 3 == 0 ? "last-in-row" : "" %>" >
                     <%= link_to product do %>
@@ -17,7 +17,7 @@
 <section class="additional-items" class="clearfix">
   <h1>Additional Items</h1>
   <ul>
-    <% @regular_products.each_with_index do |product, index| %>
+    <% @regular_products.sort{|a,b| a.created_at <=> b.created_at}.each_with_index do |product, index| %>
       <%index += 1%>
       <li class="item <%= index % 4 == 0 ? "last-in-row" : "" %>" >
         <%= link_to product do %>
