@@ -1,5 +1,12 @@
-<form action="mailto:jhooey@gmail.com" method="GET">
-    <input name="subject" type="text" Value="Email created using my-shopify-resume" />
-    <textarea id="checkout-cart" name="body"></textarea>
-    <input type="submit" value="Send" />
+<form id="checkout-form" action="mailto:jhooey@gmail.com" method="GET">
+	<fieldset>
+		<label for="subject" style="width:10%">Email Subject:</label>
+    <input id="subject" name="subject" type="text" Value="Email created using my-shopify-resume" />
+    </fieldset>
+    <fieldset>
+    	<label for="checkout-cart" style="width:10%">Email Message:</label>
+    	<textarea id="checkout-cart" name="body"></textarea>
+    	</fieldset>
+    
+    <input class="submit" type="submit" value="Send" />
 </form>

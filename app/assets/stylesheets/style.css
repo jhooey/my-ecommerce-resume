@@ -292,3 +292,15 @@ ul li.item section{
     height: 54px;
     text-align: center;
 }
+#checkout-form input,
+#checkout-form textarea  {
+	float:right;
+	width:85%;
+}
+#checkout-form input.submit {
+	width: auto;
+}
+textarea {
+	width: 100%;
+	height: 300px;
+}
