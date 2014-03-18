@@ -11,7 +11,9 @@
   </section>
   <aside class="clearfix">
           <%@images = @product.images.split(',')%>
+          <a id="main-image-fullsize" href="/assets/fullsize/<%=@images[0]%>">
           <img id="main-image" class="photo" src="/assets/<%=@images[0]%>">
+          </a>
           <ul class="thumbs">
             <% @images.each do |image| %>
               <li>
