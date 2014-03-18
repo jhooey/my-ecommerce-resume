@@ -7,7 +7,7 @@
                             <img class="photo" src="/assets/<%=product.images.split(',')[0]%>">
                             <header><%= product.title %></header>
                        <%end%>
-                            <section><td><%= raw(product.short) %></td></section>
+                            <section class="item-description"><td><%= raw(product.short) %></td></section>
              </li>
                 <% end %>
         </ul>
@@ -22,7 +22,7 @@
         <%= link_to product do %>
           <img class="photo" src="/assets/<%=product.images.split(',')[0]%>">
           <header><%= product.title %></header>
-          <section><%= raw(product.short) %></section>
+          <section class="item-description"><%= raw(product.short) %></section>
         <%end%>
       </li>
     <% end %>

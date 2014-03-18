@@ -247,6 +247,14 @@ ul li.item section{
     color:#000000;
 }
 
+#featured-items .item-description a {
+	font-weight: bold;
+    color: #4c7b27;
+}
+#featured-items .item-description a:hover {
+	font-weight: bold;
+    color: #6DB038;
+}
 /************************Item Page*************************/
 #item {
 	display:block;
