@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require_tree .
 //= require cart
+//=require jquery-ui-1.10.4.custom.min
