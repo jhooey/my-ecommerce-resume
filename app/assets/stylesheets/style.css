@@ -19,6 +19,14 @@ a {
 a:hover {
     color: #6DB038;
 }
+textarea {
+	width: 100%;
+	height: 300px;
+}
+nav ul, nav li, ul, li {
+    margin: 0px;
+    list-style: none outside none;
+}
 .clearfix:after {
     clear: both;
 }
@@ -34,10 +42,6 @@ a:hover {
 	padding: 0px 20px;
 	min-height: 100%;
 	text-align: left;
-}
-nav ul, nav li, ul, li {
-    margin: 0px;
-    list-style: none outside none;
 }
 #top {
     padding: 50px 0px 0px 0px;
@@ -300,7 +304,37 @@ ul li.item section{
 #checkout-form input.submit {
 	width: auto;
 }
-textarea {
-	width: 100%;
-	height: 300px;
+#resume-tabs {
+	
+}
+
+#resume-tabs .job-description {
+	margin:20px auto 40px auto;
+}
+#resume-tabs .job-description h3{
+	float:left;
+	padding:0;
+	margin:0;
+	display:block;
+}
+#resume-tabs .job-description h4 {
+	float:left;
+	padding:0;
+	margin:0;
+}
+#resume-tabs .job-title {
+	
+}
+#resume-tabs .job-location {
+	float:right;
+}
+#resume-tabs .working-dates {
+	clear:both;
+}
+#resume-tabs .job-description ul,
+#resume-tabs .job-description li {
+   list-style-type: square; 
+}
+#resume-tabs .job-description ul {
+	padding: 5px 20px;
 }
