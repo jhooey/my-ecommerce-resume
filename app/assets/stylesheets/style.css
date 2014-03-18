@@ -226,9 +226,11 @@ ul li.item img.photo {
 }
 #featured-items ul li.item img.photo{
 	max-width: 240px;
+	width:240px;
 }
 .additional-items ul li.item img.photo{
 	max-width: 179px;
+	width:179px;
 }
 ul li.item a {
     color:#000000;
