@@ -1,23 +1,61 @@
-<div id="resume-tabs">
+<p>
+I am currently working at Shared Services Canada on contract as a Junior Application Developer. I am seeking a permanent position in the Ottawa area. I really enjoy working with high level interpreted languages like Ruby and Python and although most of my recent projects have been coded in Python, I am always eager to learn new technologies and expand my programming capabilities.
+</p><br />
+<p>
+At Shared Services Canada our small development team (three people) created an electronic form application (eForm) that will be used internally to track and store Labour Relation’s "Conflict of Interest" forms. During the oneyear development cycle I had to learn ASP, vbscript and Oracle SQL so that we could integrate this application in the already established infrastructure. I also created a majority of the front end functionality using HTML, CSS and jQuery.
+</p>
+
+
+
+<div id="resume-tabs" style="clear:both;">
 <ul>
 <li><a href="#resume-tabs-1">Skills</a></li>
 <li><a href="#resume-tabs-2">Work Experience</a></li>
 <li><a href="#resume-tabs-3">Education</a></li>
 </ul>
 <div id="resume-tabs-1">
-<p>Languages
+<p>
+<h2>Languages</h2>
+<ul>
+<li>English</li>
+<li>French</li>
+</ul>
 
-English - Reading, writing and speaking
-French - Reading, writing and speaking
-
-Programming Languages
-ASP,  HTML, CSS, JQuery/JavaScript, mySQL, PHP, Python, Java,  C++,  IDL, Fortran 
-Frameworks
-WordPress, Web Experience Toolkit (WET), Joomla, SQLAlchemy, tKinter, Django 
-Software
-Git, FileZilla (ftp), Eclipse IDE, IIS 7
+<h2>Programming Languages</h2>
+<h3>Proficient Languages</h3>
+<ul>
+<li>ASP</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JQuery/JavaScript</li>
+<li>Oracle SQL</li>
+</ul> 
+<h3>Other Languages I have worked with</h3>
+<ul>
+<li>Ruby on Rails</li>
+<li>PHP</li>
+<li>Python</li>
+<li>sqlite</li>
+<li>mySQL</li>
+<li>Java</li>
+<li>C++</li>
+<li>IDL</li>
+<li>Fortran </li>
+</ul>
+<h2>Software and Toolkits</h2>
+<ul>
+<li>Git</li>
+<li>Eclipse IDE</li>
+<li>WordPress</li>
+<li>IIS 7</li>
+<li>SQLAlchemy</li>
+<li>tKinter</li>
+<li>Django </li>
+<li><a href="http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wet-boew/index-eng.asp">Web Experience Toolkit (WET)</a></li>
+</ul>
 </p>
 </div>
+
 <div id="resume-tabs-2">
 <section class="job-description">
 <p><span class="job-title">Junior Application Developer</span><span class="job-location">Shared Services Canada, Ottawa</span>
@@ -131,6 +169,8 @@ Heritage College (Cégep)              Diploma, Pure and Applied Sciences
  <script>
 $(function() {
 $( "#resume-tabs" ).tabs();
-$( "#resume-tabs" ).append("#item");
+});
+$( document ).ready(function() {
+$( "#resume-tabs" ).appendTo("#item");
 });
 </script>
