@@ -137,11 +137,12 @@
 
                         var cart = this._toJSONObject( this.storage.getItem( this.cartName ) );
                         var items = cart.items;
-                        var cart_list = "";
+                        var cart_list = "Here are your selected items: \n";
                         for( var i = 0; i < items.length; ++i ) {
-                                cart_list = cart_list.concat("- " + items[i].product + "\n");
-                                this.$checkoutCart.val(cart_list);
+                                cart_list = cart_list.concat("	- " + items[i].product + "\n");
                         }
+                        cart_list = cart_list.concat("\n\nPlease specify a time and place to meet Jacob Hooey so that you can review the items selected:\n\n");
+                        this.$checkoutCart.val(cart_list);
                         
                     } 
 			

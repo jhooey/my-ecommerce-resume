@@ -304,6 +304,11 @@ ul li.item section{
 #checkout-form input.submit {
 	width: auto;
 }
+p.note {
+	margin: 0 30px;
+	font-size:.8em;
+	font-style: italic;
+} 
 #resume-tabs {
 	
 }
