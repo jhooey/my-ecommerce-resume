@@ -4,7 +4,9 @@
                   <h1><%= @product.title %></h1>
                   <aside>
                           <p class="availability"><%=@product.in_stock ? 'In Stock' : 'Out of Stock'%></p>
+                          <%if @product.in_stock %>
                           <input type="submit" value="Add to Cart" class="btn" >
+                          <%end%>
                   </aside>
           </header>
           <%= @product.long %>
