@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Shopify Resume - Jacob Hooey</title>
+  <title>Jacob Hooey</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  
+
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-49144336-2', 'my-shopify-resume.herokuapp.com');
-  ga('send', 'pageview');
+    ga('create', 'UA-49144336-3', 'auto');
+    ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 <body>
 	<!--[if lte IE 8]>
@@ -47,7 +47,7 @@
 			</header>
 			<div class="content-wrapper">
 				<div class="main-content-wrapper">
-	
+
                                   <%= yield %>
 
                                 </div>
@@ -64,7 +64,7 @@
 				<section class="additional-info">
 						<h1>Additional Info</h1>
 						<p>
-							My-shopify-resume was built using the Rails 4 framework. The shopping cart functionality is powered by jQuery. 
+							My-ecommerce-resume was built using the Rails 4 framework. The shopping cart functionality is powered by jQuery.
 						</p>
 				</section>
 			</aside>
@@ -75,29 +75,29 @@
 				</p>
 			</footer>
 		</div>
-		
+
 		<script type="text/javascript">
 	         function swap(image) {
 	             document.getElementById("main-image").src = image.href;
 	             document.getElementById("main-image-fullsize").href = image.href.replace('assets', 'assets/fullsize');
 	         }
 	     </script>
-		
+
 		<script>
 		$(document).ready(function () {
-		
+
 			$('nav .checkout').hover(
 				function () {
 					//show its submenu
 					$('ul#shopping-cart').stop().slideDown(100);
-		
-				}, 
+
+				},
 				function () {
 					//hide its submenu
-					$('ul#shopping-cart').stop().slideUp(100);			
+					$('ul#shopping-cart').stop().slideUp(100);
 				}
 			);
-			
+
 		});
 		</script>
 	</body>
